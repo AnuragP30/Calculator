@@ -1,0 +1,102 @@
+<html>
+<head>
+<script>
+// numbers from 0 to 9
+function clik7() {
+document.f1.t1.value  += "7";
+        }
+function clik8() {
+ document.f1.t1.value  += "8";
+        }
+function clik9() {
+document.f1.t1.value  += "9";
+        }
+function clik4() {
+document.f1.t1.value += "4";
+        }
+function clik5() {
+document.f1.t1.value  += "5";
+        }   
+function clik6() {
+document.f1.t1.value  += "6";
+        } 
+function clik1() {
+document.f1.t1.value  += "1";
+        }  
+function clik2() {
+document.f1.t1.value  += "2";
+        }  
+function clik3() {
+document.f1.t1.value += "3";
+        } 
+function clik0() {
+document.f1.t1.value += "0";
+        }  
+ // clear all the values        
+function clikcl() {
+document.f1.t1.value = "";
+        }
+// operations 
+function clikp(){
+    document.f1.t1.value += "+"
+}
+
+function cliks(){
+    document.f1.t1.value += "-"
+}
+
+function clikmul(){
+    document.f1.t1.value += "*"
+}
+
+function clikdiv(){
+    document.f1.t1.value += "/"
+}
+
+// answer
+function clikans() {
+document.f1.t1.value = eval(document.f1.t1.value) ;
+}
+
+
+</script>
+</head>
+<body>
+<div align="center">
+<form name="f1" onsubmit="return fun()" style=" width:300px;" >
+<fieldset style="background-color: black; border-radius: 30px; padding-top:10px; padding-bottom:25px;">
+ 
+<input type="text" name="t1" style="width: 275px; font-size: 24px; height: 80px; background-color:white; border: 2px solid black; background:rgb(200, 201, 199);border-radius: 15px; font-size: 60px;"> <br> <br>
+
+<!-- numbers 7,8,9, + -->
+
+<input type="button" onclick="clik7()" name="7" value="7" style="width: 50px; height: 50px; font-size: 32px; border: 2px solid black; border-radius: 100px; "> &nbsp &nbsp 
+<input type="button" onclick="clik8()"  name="8" value="8" style="width: 50px; height: 50px; font-size: 32px; border: 2px solid black;border-radius: 100px;  "> &nbsp &nbsp 
+<input type="button" onclick="clik9()"  name="9" value="9" style="width: 50px; height: 50px; font-size: 32px; border: 2px solid black;border-radius: 100px; "> &nbsp &nbsp
+<input type="button" onclick="clikp()"  name="+" value="+" style="width: 50px; height: 50px; font-size: 20px; border: 2px solid black; font-size:30px; background-color: orange"> <br> <br>
+
+<!-- numbers 4,5,6,(-) -->
+
+<input type="button" onclick="clik4()"  name="4" value="4" style="width: 50px; height: 50px; font-size: 32px; border: 2px solid black;border-radius: 100px; "> &nbsp &nbsp 
+<input type="button" onclick="clik5()"  name="5" value="5" style="width: 50px; height: 50px; font-size: 32px; border: 2px solid black;border-radius: 100px "> &nbsp &nbsp 
+<input type="button" onclick="clik6()"  name="6" value="6" style="width: 50px; height: 50px; font-size: 32px; border: 2px solid black;border-radius: 100px"> &nbsp &nbsp 
+<input type="button" onclick="cliks()"  name="-" value="-" style="width: 50px; height: 50px; font-size: 20px; border: 2px solid black;font-size:30px; background-color: orange "> <br> <br>
+
+<!-- numbers 1,2,3,* -->
+
+<input type="button" onclick="clik3()"  name="3" value="3" style="width: 50px; height: 50px; font-size: 32px; border: 2px solid black;border-radius: 100px "> &nbsp &nbsp 
+<input type="button" onclick="clik2()"  name="2" value="2" style="width: 50px; height: 50px; font-size: 32px; border: 2px solid black;border-radius: 100px "> &nbsp &nbsp 
+<input type="button" onclick="clik1()"  name="1" value="1" style="width: 50px; height: 50px; font-size: 32px; border: 2px solid black;border-radius: 100px"> &nbsp &nbsp 
+<input type="button" onclick="clikmul()"  name="*" value="*" style="width: 50px; height: 50px; font-size: 20px; border: 2px solid black;font-size:30px;background-color: orange"> <br> <br>
+
+<!-- operations clear,ans, div -->
+
+<input type="button" onclick="clik0()"  name="0" value="0" style="width: 50px; height: 50px; font-size: 20px; border: 2px solid black;border-radius: 100px; font-size:32px; "> &nbsp &nbsp
+<input type="button" onclick="clikcl()"  name="cl" value="CL" style="width: 50px; height: 50px; font-size: 20px; border: 2px solid black; border-radius: 100px; font-size:25px;"> &nbsp &nbsp 
+<input type="button" onclick="clikans()"  name="ans" value="ans" style="width: 50px; height: 50px; font-size: 20px; border: 2px solid black; border-radius: 100px; font-size:22px; "> &nbsp &nbsp 
+<input type="button" onclick="clikdiv()"  name="/" value="/" style="width: 50px; height: 50px; font-size: 20px; border: 2px solid black;font-size:30px; background-color: orange">  
+</fieldset>
+</form>
+</div>
+</body>
+</html>
